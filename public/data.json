@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Starter Resume Builder",
+      "description": "Create simple and clean resumes with beginner-friendly tools.",
+      "price": 0,
+      "period": "one-time",
+      "tag": "new",
+      "tagType": "new",
+      "features": [
+        "20+ templates",
+        "Basic customization",
+        "Export to PDF"
+      ],
+      "icon": "📄"
+    },
+    {
+      "id": 2,
+      "name": "Pro Resume Builder",
+      "description": "Advanced resume building with ATS optimization and premium templates.",
+      "price": 9.99,
+      "period": "monthly",
+      "tag": "popular",
+      "tagType": "popular",
+      "features": [
+        "100+ templates",
+        "ATS optimization",
+        "Cover letter builder"
+      ],
+      "icon": "🚀"
+    },
+    {
+      "id": 3,
+      "name": "Career Boost Pack",
+      "description": "Complete toolkit for job seekers with resume, cover letter, and portfolio.",
+      "price": 49.99,
+      "period": "one-time",
+      "tag": "best seller",
+      "tagType": "best seller",
+      "features": [
+        "Portfolio builder",
+        "Interview tips",
+        "Export to multiple formats"
+      ],
+      "icon": "💼"
+    },
+    {
+      "id": 4,
+      "name": "LinkedIn Optimizer",
+      "description": "Enhance your LinkedIn profile visibility and engagement.",
+      "price": 5.99,
+      "period": "monthly",
+      "tag": "popular",
+      "tagType": "popular",
+      "features": [
+        "Profile analysis",
+        "Keyword suggestions",
+        "Headline generator"
+      ],
+      "icon": "🔗"
+    },
+    {
+      "id": 5,
+      "name": "Portfolio Pro",
+      "description": "Build stunning online portfolios with ease.",
+      "price": 12.99,
+      "period": "monthly",
+      "tag": "new",
+      "tagType": "new",
+      "features": [
+        "Custom domains",
+        "Drag & drop editor",
+        "Responsive design"
+      ],
+      "icon": "🎨"
+    },
+    {
+      "id": 6,
+      "name": "Interview Prep AI",
+      "description": "Practice interviews with AI-powered feedback and suggestions.",
+      "price": 14.99,
+      "period": "monthly",
+      "tag": "popular",
+      "tagType": "popular",
+      "features": [
+        "Mock interviews",
+        "Real-time feedback",
+        "Common question bank"
+      ],
+      "icon": "🤖"
+    },
+    {
+      "id": 7,
+      "name": "Ultimate Career Kit",
+      "description": "All-in-one yearly subscription for serious job seekers.",
+      "price": 99.99,
+      "period": "yearly",
+      "tag": "best seller",
+      "tagType": "best seller",
+      "features": [
+        "Everything included",
+        "Priority support",
+        "Unlimited exports"
+      ],
+      "icon": "🏆"
+    },
+    {
+      "id": 8,
+      "name": "Freelancer Toolkit",
+      "description": "Tools designed for freelancers to showcase and manage work.",
+      "price": 29.99,
+      "period": "one-time",
+      "tag": "new",
+      "tagType": "new",
+      "features": [
+        "Invoice generator",
+        "Client management",
+        "Portfolio hosting"
+      ],
+      "icon": "🧰"
+    }
+  ]
