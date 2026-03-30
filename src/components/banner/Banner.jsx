@@ -5,7 +5,7 @@ import bannerImg from "../../assets/products/banner.png";
 
 const Banner = () => {
   return (
-    <div className="flex gap-10 items-center flex-col container mx-auto text-center md:text-left md:flex-row justify-around">
+    <div className="flex gap-10 items-center flex-col mx-10 text-center md:text-left md:flex-row justify-around mb-20">
       <div className="space-y-2 md:w-130">
         <span className="badge bg-[#E1E7FF] ">
           {" "}
