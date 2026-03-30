@@ -3,7 +3,7 @@ import { LuShoppingCart } from "react-icons/lu";
 
 const DaisyNav = () => {
   return (
-    <div>
+    <div className="mb-20">
       <div className="navbar bg-base-100 shadow-sm lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
@@ -76,8 +76,8 @@ const DaisyNav = () => {
             <LuShoppingCart />
           </div>
           <p className="text-[14px]">Login</p>
-          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
-            Button
+          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-normal">
+          Get Started
           </a>
         </div>
       </div>
