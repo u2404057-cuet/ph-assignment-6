@@ -1,9 +1,10 @@
 import React from "react";
+import { LuShoppingCart } from "react-icons/lu";
 
 const DaisyNav = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,51 +29,56 @@ const DaisyNav = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Products</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>Features</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Pricing</a>
+              </li>
+              <li>
+                <a>Testimonials</a>
+              </li>
+              <li>
+                <a>FAQ</a>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="lg:text-3xl text-xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold">
+            DigiTools
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>Products</a>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2 bg-base-100 w-40 z-1">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <a>Features</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Pricing</a>
+            </li>
+            <li>
+              <a>Testimonials</a>
+            </li>
+            <li>
+              <a>FAQ</a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end flex lg:gap-5 gap-3">
+          <div className="relative text-2xl">
+            <p className="h-4 w-4 bg-red-500 rounded-full text-[10px] text-center absolute -top-1 -right-2 text-white pt-0.5">
+              1
+            </p>
+            <LuShoppingCart />
+          </div>
+          <p className="text-[14px]">Login</p>
+          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+            Button
+          </a>
         </div>
       </div>
     </div>
