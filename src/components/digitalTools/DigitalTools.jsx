@@ -2,14 +2,6 @@ import React, { Suspense } from "react";
 import Products from "./Products";
 
 const DigitalTools = () => {
-  const fetchProducts = async() => {
-    const res = await fetch('/public/data.json');
-    return res.json();
-  }
-  const productPromise = fetchProducts();
-  console.log(productPromise);
-
-
 
   return (
     <div>
@@ -22,17 +14,13 @@ const DigitalTools = () => {
           designed to boost your productivity and creativity.
         </p>
       </div>
-      <div className="flex gap-3 justify-center">
+      <div className="flex gap-3 justify-center mb-10">
         <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
           Products
         </button>
         <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
           Cart (2)
         </button>
-
-        <Suspense fallback={<p>hi...</p>}>
-          <Products productPromise={productPromise}></Products>
-        </Suspense>
       </div>
     </div>
   );
