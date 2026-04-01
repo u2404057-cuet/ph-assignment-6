@@ -14,13 +14,13 @@ import { DiVim } from "react-icons/di";
 
 function App() {
   const fetchProducts = async () => {
-    const res = await fetch("/public/data.json");
+    const res = await fetch("/data.json");
     return res.json();
   };
   const productPromise = fetchProducts();
 
   const fetchPackages = async () => {
-    const res = await fetch("/public/packages.json");
+    const res = await fetch("/packages.json");
     return res.json();
   };
   const packagePromise = fetchPackages();
