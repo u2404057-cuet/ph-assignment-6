@@ -1,16 +1,27 @@
-# React + Vite
+# cuet-ph-assignment-6
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application built as part of a programming assignment, showcasing digital career tools and subscription packages for job seekers and professionals.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
 
-## React Compiler
+- **React** — Component-based UI development
+- **Vite** — Fast build tool and development server
+- **Tailwind CSS** — Utility-first CSS framework for styling
+- **DaisyUI** — Tailwind CSS component library
+- **React Toastify** — Elegant notification system
+- **React Icons** — Popular icon packs as React components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📱 Responsive Design
+Fully responsive layout that adapts seamlessly across all screen sizes — from mobile phones to large desktop monitors.
+
+### 🛒 Add to Cart Functionality
+Users can browse digital products and add them to their cart, with real-time cart state management and toast notifications for a smooth user experience.
+
+### 📦 Data Handling
+Dynamic data fetching from JSON sources using React Suspense, enabling smooth loading states and efficient rendering of products and pricing packages.
