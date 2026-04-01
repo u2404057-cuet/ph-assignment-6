@@ -1,5 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { MdDelete } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const Cart = ({ selectedProducts, setSelectedProducts, price, setPrice }) => {
 
@@ -8,8 +9,12 @@ const Cart = ({ selectedProducts, setSelectedProducts, price, setPrice }) => {
         const filterProducts = selectedProducts.filter(selectedProduct => selectedProduct.id !== forDeleteProduct.id);
         console.log(filterProducts);
         setSelectedProducts(filterProducts);
+        toast("Product removed");
+    }
 
-
+    const handleCheckOut = () => {
+        setSelectedProducts([]);
+        toast("Checkout Successful");
     }
   //   console.log(selectedProducts);
 
@@ -26,7 +31,7 @@ const Cart = ({ selectedProducts, setSelectedProducts, price, setPrice }) => {
           return (
             <div
               key={selectedProduct.id}
-              className="flex justify-between items-center bg-white p-4 rounded-2xl"
+              className="flex sm:justify-between flex-col sm:flex-row items-center bg-white p-4 rounded-2xl"
             >
               <div className="flex items-center gap-3">
                 <div className="text-4xl">{selectedProduct.icon}</div>
@@ -48,7 +53,7 @@ const Cart = ({ selectedProducts, setSelectedProducts, price, setPrice }) => {
         <p className="">Total:</p>
         <p className="">${price.toFixed(2)}</p>
       </div>
-      <button className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Proceed to checkout</button>
+      <button onClick={handleCheckOut} className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Proceed to checkout</button>
     </div>
   );
 };

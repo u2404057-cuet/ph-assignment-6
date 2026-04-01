@@ -69,7 +69,7 @@ const Products = ({
               disabled={isSelected}
               className={`btn ${isSelected ? "bg-green-400" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} rounded-full text-white w-full hover:scale-105 transform transition-transform duration-300`}
             >
-              {isSelected ? "Added to cart" : "Buy now"}
+              {isSelected ? (<> <FaCheck /> Added to cart</> ) : "Buy now"}
             </button>
           </div>
         );
