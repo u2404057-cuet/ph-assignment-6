@@ -23,12 +23,12 @@ const Banner = () => {
           Products
         </p>
         <div className="flex gap-3 justify-center md:justify-start">
-          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-normal">
+          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-normal hover:scale-105 transform transition-transform duration-300">
             Explore Products
           </a>
-          <a className="btn border border-[#4F39F6] rounded-full">
+          <a className="btn border border-[#4F39F6] rounded-full hover:scale-105 transform transition-transform duration-300">
             <img src={img2} alt="" />
-            <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent ">
               Watch Demo
             </span>
           </a>

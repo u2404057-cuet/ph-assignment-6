@@ -7,6 +7,9 @@ import DigitalTools from "./components/digitalTools/DigitalTools";
 import { Suspense } from "react";
 import Products from "./components/digitalTools/Products";
 import Steps from "./components/steps/Steps";
+import Packages from "./components/packages/Packages";
+import Explore from "./components/explore/Explore";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const fetchProducts = async () => {
@@ -14,7 +17,12 @@ function App() {
     return res.json();
   };
   const productPromise = fetchProducts();
-  console.log(productPromise);
+
+  const fetchPackages = async () => {
+    const res = await fetch("/public/packages.json");
+    return res.json();
+  };
+  const packagePromise = fetchPackages();
 
   return (
     <>
@@ -26,6 +34,11 @@ function App() {
         <Products productPromise={productPromise}></Products>
       </Suspense>
       <Steps></Steps>
+      <Suspense>
+        <Packages packagePromise={packagePromise}></Packages>
+      </Suspense>
+      <Explore></Explore>
+      <Footer></Footer>
       <ToastContainer />
     </>
   );

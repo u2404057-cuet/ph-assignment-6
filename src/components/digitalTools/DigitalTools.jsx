@@ -15,10 +15,10 @@ const DigitalTools = () => {
         </p>
       </div>
       <div className="flex gap-3 justify-center mb-10">
-        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
+        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:scale-105 transform transition-transform duration-300">
           Products
         </button>
-        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
+        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:scale-105 transform transition-transform duration-300">
           Cart (2)
         </button>
       </div>

@@ -6,9 +6,9 @@ const Products = ({ productPromise }) => {
   console.log(products);
   return (
     <div className="mx-10 grid grid-cols-3 gap-5 mb-20">
-      {products.map((product) => {
+      {products.map((product, index) => {
         return (
-          <div className="border border-gray-100 shadow rounded-2xl p-5 relative space-y-3">
+          <div key={index} className="border border-gray-100 shadow rounded-2xl p-5 relative space-y-3">
             <div className="border border-gray-100 p-3 rounded-full inline-block">
               {product.icon}
             </div>
@@ -22,9 +22,9 @@ const Products = ({ productPromise }) => {
               <span className="text-xl font-light text-[#627382]"> {product.period}</span>
             </p>
             <div className="">
-              {product.features.map((feature) => {
+              {product.features.map((feature, index) => {
                 return (
-                  <div className="flex items-center gap-3">
+                  <div key={index} className="flex items-center gap-3">
                     <FaCheck className="text-green-400" />
                     <p className="text-[#627382]">{feature}</p>
                   </div>

@@ -76,7 +76,7 @@ const DaisyNav = () => {
             <LuShoppingCart />
           </div>
           <p className="text-[14px]">Login</p>
-          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-normal">
+          <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-normal hover:scale-105 transform transition-transform duration-300">
           Get Started
           </a>
         </div>

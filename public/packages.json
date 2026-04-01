@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "type": "Starter",
+      "for": "Individuals, Beginners",
+      "price": 0,
+      "period": "monthly",
+      "buttonText": "Get Started",
+      "features": [
+        "Access to basic tools",
+        "10+ templates",
+        "Community support",
+        "Limited exports"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Pro",
+      "for": "Professionals, Freelancers",
+      "price": 19.99,
+      "period": "monthly",
+      "buttonText": "Start Free Trial",
+      "features": [
+        "Access to all premium tools",
+        "100+ templates",
+        "Priority support",
+        "Unlimited exports",
+        "Advanced analytics",
+        "AI-powered recommendations",
+        "Custom branding options"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Enterprise",
+      "for": "Teams, Organizations",
+      "price": 99.99,
+      "period": "yearly",
+      "buttonText": "Contact Sales",
+      "features": [
+        "Everything in Pro",
+        "Team collaboration",
+        "Dedicated account manager",
+        "Custom integrations",
+        "24/7 premium support",
+        "Advanced security & compliance",
+        "Bulk user management",
+        "API access"
+      ]
+    }
+  ]
