@@ -11,7 +11,7 @@ const Steps = () => {
                 <h1 className='font-extrabold text-5xl'>Get Started in 3 Steps</h1>
                 <p className="text-[#627382]">Start using premium digital tools in minutes, not hours.</p>
             </div>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-4">
                 <StepCard
                 img={img1}
                 num={1}

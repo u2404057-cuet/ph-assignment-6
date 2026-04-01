@@ -1,7 +1,6 @@
-import React, { Suspense } from "react";
-import Products from "./Products";
+import React from "react";
 
-const DigitalTools = () => {
+const DigitalTools = ({cartBtn, setCartBtn, selectedProducts}) => {
 
   return (
     <div>
@@ -15,11 +14,11 @@ const DigitalTools = () => {
         </p>
       </div>
       <div className="flex gap-3 justify-center mb-10">
-        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:scale-105 transform transition-transform duration-300">
+        <button onClick={() => setCartBtn('product')} className={`btn rounded-full ${cartBtn === "product" ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"} hover:scale-105 transform transition-transform duration-300`}>
           Products
         </button>
-        <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:scale-105 transform transition-transform duration-300">
-          Cart (2)
+        <button onClick={() => setCartBtn('cart')} className={`btn rounded-full ${cartBtn === "cart" ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"} hover:scale-105 transform transition-transform duration-300`}>
+          Cart ({selectedProducts.length})
         </button>
       </div>
     </div>

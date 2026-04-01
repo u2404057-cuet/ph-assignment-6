@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#101727] px-10 h-100 flex justify-between flex-col">
+    <div className=" bg-[#101727] sm:px-10 h-full flex justify-between flex-col">
       <footer className="footer sm:footer-horizontal bg-[#101727] p-10 text-white">
         <aside>
           <h1 className="font-extrabold text-5xl">DigiTools</h1>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-    <hr className="border border-b-white opacity-40 px-10"/>
+    <hr className="border border-b-white opacity-40 px-10 "/>
       <footer className="footer sm:footer-horizontal footer-center text-white p-4 bg-[#101727]">
         <aside>
           <p>

@@ -4,12 +4,13 @@ import DaisyNav from "./components/daisyNav/DaisyNav";
 import Banner from "./components/banner/Banner";
 import Stats from "./components/stats/Stats";
 import DigitalTools from "./components/digitalTools/DigitalTools";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Products from "./components/digitalTools/Products";
 import Steps from "./components/steps/Steps";
 import Packages from "./components/packages/Packages";
 import Explore from "./components/explore/Explore";
 import Footer from "./components/footer/Footer";
+import { DiVim } from "react-icons/di";
 
 function App() {
   const fetchProducts = async () => {
@@ -24,17 +25,28 @@ function App() {
   };
   const packagePromise = fetchPackages();
 
+  const [cartBtn, setCartBtn] = useState("product");
+  const [selectedProducts, setSelectedProducts] = useState([]);
+
   return (
     <>
-      <DaisyNav></DaisyNav>
+      <DaisyNav selectedProducts={selectedProducts}></DaisyNav>
       <Banner></Banner>
       <Stats></Stats>
-      <DigitalTools></DigitalTools>
-      <Suspense fallback={<p>hi...</p>}>
-        <Products productPromise={productPromise}></Products>
+      <DigitalTools cartBtn={cartBtn} setCartBtn={setCartBtn} selectedProducts={selectedProducts}></DigitalTools>
+      <Suspense
+        fallback={<div className="flex justify-center mb-10">
+          <span className="loading loading-dots loading-xl"></span>
+        </div>}
+      >
+        <Products productPromise={productPromise} cartBtn={cartBtn} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></Products>
       </Suspense>
       <Steps></Steps>
-      <Suspense>
+      <Suspense
+        fallback={<div className="flex justify-center mb-10">
+          <span className="loading loading-dots loading-xl"></span>
+        </div>}
+      >
         <Packages packagePromise={packagePromise}></Packages>
       </Suspense>
       <Explore></Explore>

@@ -3,7 +3,7 @@ import React from 'react';
 const StepCard = ({img, num, heading, description}) => {
     return (
         <div>
-            <div className="relative flex items-center justify-center flex-col text-center px-6 py-16 rounded-2xl bg-gray-100 shadow space-y-3 mb-20">
+            <div className="relative flex items-center justify-center flex-col text-center px-6 py-16 rounded-2xl bg-gray-100 shadow space-y-3">
                 <div className="p-5 bg-linear-to-r from-[#4F39F610] to-[#9514FA10] rounded-full">
                 <img src={img} alt="" />
                 </div>

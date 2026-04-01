@@ -1,7 +1,8 @@
 import React from "react";
 import { LuShoppingCart } from "react-icons/lu";
 
-const DaisyNav = () => {
+const DaisyNav = ({selectedProducts}) => {
+  console.log(selectedProducts);
   return (
     <div className="mb-20">
       <div className="navbar bg-base-100 shadow-sm lg:px-10">
@@ -70,8 +71,8 @@ const DaisyNav = () => {
         </div>
         <div className="navbar-end flex lg:gap-5 gap-3">
           <div className="relative text-2xl">
-            <p className="h-4 w-4 bg-red-500 rounded-full text-[10px] text-center absolute -top-1 -right-2 text-white pt-0.5">
-              1
+            <p className={`h-4 w-4 bg-red-500 rounded-full text-[10px] text-center absolute -top-1 -right-2 text-white pt-0.5 ${selectedProducts.length? "block" : "hidden"}`}>
+              {selectedProducts.length}
             </p>
             <LuShoppingCart />
           </div>

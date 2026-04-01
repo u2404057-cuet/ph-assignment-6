@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 
 const PackageCard = ({ pack }) => {
-  console.log(pack);
+  // console.log(pack);
   return pack.type === "Pro" ? (
     <div className="">
       <div className="relative px-6 py-8 rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow h-full flex flex-col justify-between gap-3">
