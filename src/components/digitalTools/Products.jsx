@@ -5,7 +5,7 @@ const Products = ({ productPromise }) => {
   const products = use(productPromise);
   console.log(products);
   return (
-    <div className="mx-10 grid grid-cols-3 gap-5">
+    <div className="mx-10 grid grid-cols-3 gap-5 mb-20">
       {products.map((product) => {
         return (
           <div className="border border-gray-100 shadow rounded-2xl p-5 relative space-y-3">

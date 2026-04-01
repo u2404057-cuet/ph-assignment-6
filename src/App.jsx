@@ -6,6 +6,7 @@ import Stats from "./components/stats/Stats";
 import DigitalTools from "./components/digitalTools/DigitalTools";
 import { Suspense } from "react";
 import Products from "./components/digitalTools/Products";
+import Steps from "./components/steps/Steps";
 
 function App() {
   const fetchProducts = async () => {
@@ -24,6 +25,7 @@ function App() {
       <Suspense fallback={<p>hi...</p>}>
         <Products productPromise={productPromise}></Products>
       </Suspense>
+      <Steps></Steps>
       <ToastContainer />
     </>
   );

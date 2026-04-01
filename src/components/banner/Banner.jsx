@@ -1,7 +1,7 @@
 import React from "react";
-import { FaPlay } from "react-icons/fa";
-import { SiCircle } from "react-icons/si";
 import bannerImg from "../../assets/products/banner.png";
+import img1 from "../../assets/products/group-5.png";
+import img2 from "../../assets/Play.png";
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
       <div className="space-y-2 md:w-130">
         <span className="badge bg-[#E1E7FF] ">
           {" "}
-          <SiCircle className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent" />
+          <img src={img1} alt="" />
           <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
             New: AI-Powered Tools Available
           </span>
@@ -27,8 +27,10 @@ const Banner = () => {
             Explore Products
           </a>
           <a className="btn border border-[#4F39F6] rounded-full">
-            <FaPlay />
-            Watch Demo
+            <img src={img2} alt="" />
+            <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+              Watch Demo
+            </span>
           </a>
         </div>
       </div>
